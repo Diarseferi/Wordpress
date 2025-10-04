@@ -16,5 +16,12 @@
     <p class="site-tagline"><?php bloginfo('description'); ?></p>
   <?php endif; ?>
 
-
   </header>
+  <nav class='site-nav'>
+    <?php
+    wp_nav_menu(array(
+      'theme_location'=>'primary',
+      'menu_class'=>'main-menu'
+    ));
+    ?>
+  </nav>
